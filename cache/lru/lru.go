@@ -7,7 +7,7 @@ type DoubleLinkedList[K comparable, V any] struct {
 	prev, next *DoubleLinkedList[K, V]
 }
 
-// LRUCache LRU缓存
+// LRUCache LRU缓存(最近最少使用)
 type LRUCache[K comparable, V any] struct {
 	capacity   int
 	cache      map[K]*DoubleLinkedList[K, V]
